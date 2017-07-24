@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Netflix Subscription Codes</title>
+    <meta name="description" content="">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link href="https://cdn.unpacker.org/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.unpacker.org/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/helpers.min.css" rel="stylesheet">
+    <link href="css/app.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <div class="background">
+            <div class="background-image"></div>
+            <div class="background-overlay"></div>
+        </div>
+
+        <header class="header">
+            <a href="/" class="logo"></a>
+        </header>
+
+        <section class="body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="generator">
+                            <div class="flex-container">
+                                <div class="flex-column">
+                                    <div class="gift-card"></div>
+                                </div>
+
+                                <div class="flex-column">
+                                    <form id="generator">
+                                        <ul id="generator-output" class="list-unstyled d-none"></ul>
+
+                                        <div class="form-group">
+                                            <input type="text" name="email" class="form-control" placeholder="E-mail">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <select name="type" class="form-control">
+                                                <option value="default" selected disabled>
+                                                    Package Types
+                                                </option>
+
+                                                <option value="0">
+                                                    Basic (1 screen)
+                                                </option>
+
+                                                <option value="1">
+                                                    Standard (2 screens + HD)
+                                                </option>
+
+                                                <option value="2">
+                                                    Premium (4 screens + UHD)
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <select name="subscription" class="form-control">
+                                                <option value="default" selected disabled>
+                                                    Valid Through
+                                                </option>
+
+                                                <option value="1">
+                                                    One Month
+                                                </option>
+
+                                                <option value="2">
+                                                    Three Months
+                                                </option>
+
+                                                <option value="3">
+                                                    Six Months
+                                                </option>
+
+                                                <option value="4">
+                                                    One Year
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                        <button type="submit" name="submit" class="btn btn-block btn-primary" data-loading-text="<span class='fa fa-fw fa-spin fa-spinner'></span> Please wait...">
+                                            Confirm
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <span class="h3 panel-title">
+                            An Title...
+                        </span>
+                    </div>
+
+                    <div class="panel-body">
+                        <h1 class="mt-0">Sample h1</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime placeat iure quia debitis nulla commodi incidunt veritatis odit corporis quibusdam harum rerum officia expedita, eos saepe quod, aut ipsum, eum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis fugiat possimus commodi. Consectetur voluptates doloribus, ut temporibus? Harum impedit nostrum, sequi. Id aperiam modi et reiciendis, nisi neque at magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita qui rem, cupiditate dolore saepe molestiae magni. Perferendis voluptates qui dolorum doloremque aperiam inventore error quo. Quas animi cumque eum facere.
+                        </p>
+
+                        <h2>Sample h2</h2>
+                        <p class="mb-0">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nesciunt sit amet voluptatum nihil doloremque accusamus, quam ex commodi. Amet debitis obcaecati id deleniti vero quia ab consectetur voluptate soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure temporibus earum ut aperiam voluptas cupiditate quae harum incidunt, quod aliquid voluptatum, aliquam veniam impedit quia aspernatur consequuntur odit omnis assumenda?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <ul class="list-unstyled socials">
+                    <li class="social-item">
+                        <a href="#" class="social-link">
+                            <span class="fa fa-fw fa-facebook"></span>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="#" class="social-link">
+                            <span class="fa fa-fw fa-twitter"></span>
+                        </a>
+                    </li>
+                </ul>
+
+                &copy; 2017. All rights reserved.
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Scripts -->
+    <script>
+        window.App = {
+            locker: function () {
+                alert('demo');
+            },
+            consoleMessages: [
+                'Initiating request',
+                'Processing user data',
+                'You have requested subscription type of {type}',
+                'Subscription will be granted for {email}',
+                'Subscription will be valid through {subscription}',
+                'Your request status has been set to "PENDING"',
+                'User verification required',
+                'Complete verification to receive requested subscription'
+            ]
+        };
+    </script>
+
+    <script src="https://cdn.unpacker.org/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.unpacker.org/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
