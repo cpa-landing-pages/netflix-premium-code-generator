@@ -1,4 +1,4 @@
-### Netflix Subscription Code Generator
+### Netflix Premium Code Generator
 
 #### About
 ---
